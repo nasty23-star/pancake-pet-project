@@ -6,11 +6,7 @@
   </div>
   <router-view /> 
 
-  <h1>Futurama</h1>
-  <section id="user-goal">
-  <h2>My Goal</h2>
-  <p>{{ courseGoal }}</p>
-</section>
+  
 </template>
 <script>
 
@@ -19,7 +15,7 @@ export default{
 
 data() { 
   return {
-   courseGoal: 'finish the course'
+  
     }
   }
 
