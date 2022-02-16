@@ -1,19 +1,33 @@
 <template>
   <div id="nav">
+   
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/english">English</router-link>
   </div>
-  <router-view/>
+  <router-view /> 
+
+  <h1>Futurama</h1>
+  <section id="user-goal">
+  <h2>My Goal</h2>
+  <p>{{ courseGoal }}</p>
+</section>
 </template>
+<script>
+
+
+export default{
+
+data() { 
+  return {
+   courseGoal: 'finish the course'
+    }
+  }
+
+}
+</script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+
 
 #nav {
   padding: 30px;
@@ -27,4 +41,49 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.result {
+  padding-bottom: 20px;
+}
+#app {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: lightblue;
+}
+
+
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  background: teal;
+  color: white;
+  font-size: 18px;
+  border: 0;
+  padding: 1rem 1.5rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  transform: scale(0.99);
+}
+
 </style>
